@@ -1,0 +1,12 @@
+---
+title: "regressão"
+author: "rafael"
+date: "2022-10-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+$$S_{xx} = \Sigma_{i=0}^n(x_i - \overline{x})^2 \\S_{xy}=\Sigma_{i=0}^nyi(x_i-\overline{x}) \\ \hat{\beta_1}=\frac{S_{xy}}{S_{xx}}$$
