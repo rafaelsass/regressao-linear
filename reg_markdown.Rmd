@@ -1,0 +1,25 @@
+---
+title: "Material da disciplina de regressão linear UFMG 2022/02"
+author: "Rafael Arocho"
+date: "2022-10-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Regressão Linear
+
+## Regressão linear simples  
+
+Fórmulas para adequação da equação da reta utilizando minímos quadrados:
+
+$$\displaystyle S_{xx} = \sum_{i=0}^n(x_i - \overline{x})^2 \\S_{xy}=\sum_{i=0}^nyi(x_i-\overline{x}) \\ \hat{\beta_1}=\frac{S_{xy}}{S_{xx}} \\ \hat{\beta_0} = \hat{y}-\beta_1\hat{x}$$
+Equação ajustada: $\hat{y} = \hat{\beta_0} + \hat{\beta_1}x$
+
+### Propriedades  
+
+- O estimador $\hat{y_i}$ é combinação linear de $y_i$
+- $\hat{\beta_0}$ e $\hat{\beta_1}$ são estimadores não viciados dos parametros $\hat{\beta_0}$ e $\hat{\beta_1}$
+- A soma dos residuos em qualquer modelo de regressão que contenha um intercepto $\beta_0$ será sempre 0, i.e, $\displaystyle \sum_{i=1}^n(y_i - \hat{y_1}) = \sum_{i=1}^ne_i=0$ 
